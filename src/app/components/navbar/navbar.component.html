@@ -1,1 +1,26 @@
-<p>navbar works!</p>
+<nav id="navbar" [class.scrolled]="scrolled">
+    <div class="nav-inner container">
+        <a href="#hero" class="nav-logo">
+            <span class="logo-name">Talisman</span>
+            <span class="logo-sub">Cacao Fino de Aroma</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#herkunft">Herkunft</a></li>
+            <li><a href="#verarbeitung">Verarbeitung</a></li>
+            <li><a href="#produkte">Produkte</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+
+        <button class="nav-toggle" (click)="toggleMenu()" aria-label="Menü öffnen">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <ul class="mobile-menu" [class.open]="menuOpen">
+        <li><a href="#herkunft" (click)="closeMenu()">Herkunft</a></li>
+        <li><a href="#verarbeitung" (click)="closeMenu()">Verarbeitung</a></li>
+        <li><a href="#produkte" (click)="closeMenu()">Produkte</a></li>
+        <li><a href="#kontakt" (click)="closeMenu()">Kontakt</a></li>
+    </ul>
+</nav>

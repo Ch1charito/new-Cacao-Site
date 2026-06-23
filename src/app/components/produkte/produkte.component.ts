@@ -1,11 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-produkte',
-  imports: [],
   templateUrl: './produkte.component.html',
-  styleUrl: './produkte.component.scss'
+  styleUrls: ['./produkte.component.scss']
 })
-export class ProdukteComponent {
+export class ProdukteComponent implements AfterViewInit {
 
+  ngAfterViewInit() {
+    const reveals = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, i * 150);
+
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    reveals.forEach(el => observer.observe(el));
+  }
 }
