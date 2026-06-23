@@ -4,3 +4,21 @@
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+/* wie dein Astro section padding */
+section {
+  padding: var(--section-pad) 1.5rem;
+}
+
+/* optional: smoother baseline */
+body {
+  background-color: var(--cream);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
