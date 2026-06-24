@@ -44,12 +44,14 @@
   width: 100%;
   height: auto;
   display: block;
+  animation: floatIn 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .hero-content-side {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  animation: fadeUp 1.2s 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .hero-logo-wrap {
@@ -81,18 +83,42 @@
   align-items: center;
   gap: 0.5rem;
   color: var(--text-muted);
+  animation: fadeIn 1.5s 1s both;
 }
 
 .scroll-label {
   font-size: 0.62rem;
+  font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .scroll-arrow {
+  display: block;
   width: 1px;
   height: 2.5rem;
   background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes floatIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
 }
 
 @media (max-width: 768px) {
@@ -101,9 +127,18 @@
     text-align: center;
   }
 
+  .hero-image-side {
+    order: 1;
+  }
+
   .hero-img-wrap {
     max-width: 280px;
     margin: 0 auto;
+  }
+
+  .hero-content-side {
+    order: 0;
+    align-items: center;
   }
 
   .hero-logo-wrap {

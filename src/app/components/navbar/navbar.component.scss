@@ -15,6 +15,9 @@ nav.scrolled {
 }
 
 .nav-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.25rem clamp(1.5rem, 5vw, 4rem);
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -23,12 +26,14 @@ nav.scrolled {
 .nav-logo {
     display: flex;
     flex-direction: column;
+    line-height: 1.1;
     margin-right: auto;
 }
 
 .logo-name {
     font-family: var(--font-display);
     font-size: 1.35rem;
+    font-weight: 400;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--brown-deep);
@@ -36,6 +41,7 @@ nav.scrolled {
 
 .logo-sub {
     font-size: 0.6rem;
+    font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--gold);
@@ -49,10 +55,27 @@ nav.scrolled {
 
 .nav-links a {
     font-size: 0.72rem;
+    font-weight: 500;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--brown-rich);
     position: relative;
+    padding-bottom: 2px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .nav-toggle {
@@ -62,23 +85,40 @@ nav.scrolled {
     background: none;
     border: none;
     cursor: pointer;
+    padding: 4px;
 }
 
 .nav-toggle span {
+    display: block;
     width: 22px;
     height: 1px;
     background: var(--brown-deep);
+    transition: all 0.3s ease;
 }
 
 .mobile-menu {
     display: none;
+    list-style: none;
     flex-direction: column;
     background: rgba(245, 240, 232, 0.98);
-    padding: 1.5rem;
+    padding: 1.5rem clamp(1.5rem, 5vw, 4rem);
+    border-top: 1px solid var(--cream-mid);
+    gap: 0;
 }
 
 .mobile-menu.open {
     display: flex;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 0.9rem 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--brown-rich);
+    border-bottom: 1px solid var(--cream-mid);
 }
 
 @media (max-width: 768px) {

@@ -1,24 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+
+* ,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream: #f5f0e8;
+  --cream-dark: #ede6d6;
+  --cream-mid: #e8dfc9;
+  --brown-deep: #2c1a0e;
+  --brown-rich: #4a2c14;
+  --brown-mid: #7a4a20;
+  --brown-light: #b07840;
+  --gold: #c9984a;
+  --gold-light: #deb96a;
+  --text-primary: #1e0f06;
+  --text-secondary: #5c3a1e;
+  --text-muted: #9a7050;
+
+  /* TEMPORARY system fonts - replace with local font-face once downloaded */
+  --font-display: Georgia, serif;
+  --font-body: system-ui, sans-serif;
+
+  --max-width: 1200px;
+  --section-pad: clamp(5rem, 10vw, 9rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  padding: var(--section-pad) clamp(1.5rem, 5vw, 4rem);
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section-title {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  color: var(--brown-deep);
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  width: 3rem;
+  height: 1px;
+  background: var(--gold);
+  margin: 1.5rem 0;
+}
+
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* wie dein Astro section padding */
-section {
-  padding: var(--section-pad) 1.5rem;
-}
-
-/* optional: smoother baseline */
-body {
-  background-color: var(--cream);
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  line-height: 1.7;
-  overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
