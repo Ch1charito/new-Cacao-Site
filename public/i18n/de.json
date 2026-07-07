@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "origin": "Herkunft",
+    "process": "Verarbeitung",
+    "products": "Produkte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "sub": "Esmeraldas · Ecuador",
+    "scroll": "Entdecken"
+  },
+  "origin": {
+    "eyebrow": "Herkunft",
+    "title": "Aus dem Herzen Ecuadors",
+    "p1": "Unsere Kakaoplantage liegt in der Region Esmeraldas im Nordwesten Ecuadors – einem der artenreichsten Tropengebiete der Welt. Das feuchte Klima, die fruchtbaren Vulkanböden und die Nähe zum Äquator schaffen ideale Bedingungen für Cacao Fino de Aroma.",
+    "p2": "Seit mehr als 50 Jahren pflegt unsere Familie diesen Kakao mit Sorgfalt und Respekt vor der Natur. Der Anbau erfolgt in hügeliger Landschaft, in kleinem bis mittlerem Maßstab – ohne Pestizide, im Einklang mit dem umliegenden Regenwald.",
+    "p3": "Was hier wächst, ist kein Massenprodukt. Es ist ein Kakao mit Geschichte, Charakter und einem Aroma, das den Boden erzählt, aus dem er kommt.",
+    "fact1": "Jahre Familientradition",
+    "fact2": "Esmeraldas, Ecuador",
+    "fact3": "Umweltfreundlicher Anbau"
+  },
+  "process": {
+    "eyebrow": "Verarbeitung",
+    "title": "Vom Baum zur Bohne",
+    "step1title": "Ernte & Öffnung",
+    "step1text": "Die reifen Kakaofrüchte werden von Hand geerntet und geöffnet. Die Kakaobohnen werden sorgfältig entnommen.",
+    "step2title": "Fermentation",
+    "step2text": "Die Bohnen fermentieren mehrere Tage in Holzkisten. In diesem Prozess entwickelt sich das typische, komplexe Aroma des Feinkakaos.",
+    "step3title": "Trocknung",
+    "step3text": "Anschließend werden die Bohnen an der Sonne getrocknet – langsam und schonend, um das Aroma zu erhalten.",
+    "step4title": "Röstung",
+    "step4text": "Die getrockneten Bohnen werden geröstet und von ihrer Schale befreit. Die Röstung bringt die Tiefe des Aromas hervor.",
+    "step5title": "Vermahlung",
+    "step5text": "Durch Mahlen entsteht die flüssige Kakaomasse. Durch Pressen lässt sich Kakaobutter abtrennen – der Rückstand ergibt feinstes Kakaopulver."
+  },
+  "products": {
+    "eyebrow": "Produkte",
+    "title": "Was wir anbieten",
+    "sub": "Alle Produkte stammen ausschließlich aus unserem eigenen Anbau in Esmeraldas. Keine Zusätze, keine Kompromisse.",
+    "p1tag": "Hoher Kakaoanteil",
+    "p1name": "Dunkle Schokolade",
+    "p1desc": "Kakaomasse, etwas Kakaobutter und eine geringe Menge Zucker – fein conchiert und temperiert. Das Ergebnis ist eine Schokolade mit außergewöhnlicher Aromatik.",
+    "p2tag": "100 % reiner Kakao",
+    "p2name": "Kakaopaste",
+    "p2desc": "Durch das Mahlen gerösteter Kakaobohnen entsteht eine cremige, aromatische Paste aus 100 % Kakao – ohne jegliche Zusätze.",
+    "p3tag": "Fermentiert & getrocknet",
+    "p3name": "Kakaobohnen",
+    "p3desc": "Fermentierte und sonnengetrocknete Rohbohnen in Premiumqualität. Sortiert, gereinigt, direkt verzehrbar."
+  },
+  "contact": {
+    "eyebrow": "Kontakt",
+    "title": "Geschäftliche Anfragen",
+    "sub": "Sie interessieren sich für unsere Produkte? Wir freuen uns auf Ihre Nachricht.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Ihre Nachricht wurde erfolgreich gesendet."
+  },
+  "footer": {
+    "tagline": "Cacao Fino de Aroma aus Esmeraldas, Ecuador.",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

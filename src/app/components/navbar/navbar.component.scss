@@ -78,6 +78,37 @@ nav.scrolled {
     width: 100%;
 }
 
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.lang-switcher button,
+.mobile-lang button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    transition: color 0.2s;
+    padding: 0;
+}
+
+.lang-switcher button:hover,
+.mobile-lang button:hover {
+    color: var(--gold);
+}
+
+.lang-switcher span,
+.mobile-lang span {
+    color: var(--text-muted);
+    font-size: 0.65rem;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -121,8 +152,16 @@ nav.scrolled {
     border-bottom: 1px solid var(--cream-mid);
 }
 
+.mobile-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
 @media (max-width: 768px) {
-    .nav-links {
+    .nav-links,
+    .lang-switcher {
         display: none;
     }
 
