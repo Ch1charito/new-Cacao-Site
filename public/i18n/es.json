@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "origin": "Origen",
+    "process": "Proceso",
+    "products": "Productos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "sub": "Esmeraldas · Ecuador",
+    "scroll": "Descubrir"
+  },
+  "origin": {
+    "eyebrow": "Origen",
+    "title": "Del corazón de Ecuador",
+    "p1": "Nuestra plantación de cacao se encuentra en la región de Esmeraldas, en el noroeste de Ecuador, una de las zonas tropicales con mayor biodiversidad del mundo. El clima húmedo, los fértiles suelos volcánicos y la proximidad al ecuador crean condiciones ideales para el Cacao Fino de Aroma.",
+    "p2": "Durante más de 50 años, nuestra familia ha cultivado este cacao con cuidado y respeto por la naturaleza. El cultivo se realiza en terreno montañoso, a pequeña y mediana escala, sin pesticidas y en armonía con la selva tropical.",
+    "p3": "Lo que crece aquí no es un producto masivo. Es un cacao con historia, carácter y un aroma que habla de la tierra de la que proviene.",
+    "fact1": "Años de tradición familiar",
+    "fact2": "Esmeraldas, Ecuador",
+    "fact3": "Cultivo sostenible"
+  },
+  "process": {
+    "eyebrow": "Proceso",
+    "title": "Del árbol al grano",
+    "step1title": "Cosecha y apertura",
+    "step1text": "Las mazorcas maduras se cosechan a mano y se abren. Los granos de cacao se extraen cuidadosamente.",
+    "step2title": "Fermentación",
+    "step2text": "Los granos fermentan varios días en cajones de madera. Este proceso desarrolla el aroma típico y complejo del cacao fino.",
+    "step3title": "Secado",
+    "step3text": "A continuación, los granos se secan al sol, lenta y suavemente, para conservar el aroma.",
+    "step4title": "Tostado",
+    "step4text": "Los granos secos se tuestan y se descascarillan. El tostado saca a relucir la profundidad del aroma.",
+    "step5title": "Molienda",
+    "step5text": "La molienda produce la masa de cacao líquida. El prensado separa la manteca de cacao; el residuo se convierte en el más fino cacao en polvo."
+  },
+  "products": {
+    "eyebrow": "Productos",
+    "title": "Lo que ofrecemos",
+    "sub": "Todos los productos provienen exclusivamente de nuestra propia plantación en Esmeraldas. Sin aditivos, sin compromisos.",
+    "p1tag": "Alto contenido de cacao",
+    "p1name": "Chocolate negro",
+    "p1desc": "Masa de cacao, un poco de manteca de cacao y una pequeña cantidad de azúcar, finamente conchado y temperado. El resultado es un chocolate con aromas excepcionales.",
+    "p2tag": "100 % cacao puro",
+    "p2name": "Pasta de cacao",
+    "p2desc": "La molienda de granos de cacao tostados produce una pasta cremosa y aromática de 100 % cacao, sin ningún aditivo.",
+    "p3tag": "Fermentados y secos",
+    "p3name": "Granos de cacao",
+    "p3desc": "Granos crudos fermentados y secados al sol de calidad premium. Clasificados, limpios, listos para consumir."
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Consultas comerciales",
+    "sub": "¿Le interesan nuestros productos? Esperamos su mensaje.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "success": "Su mensaje ha sido enviado correctamente."
+  },
+  "footer": {
+    "tagline": "Cacao Fino de Aroma de Esmeraldas, Ecuador.",
+    "rights": "Todos los derechos reservados."
+  }
+}

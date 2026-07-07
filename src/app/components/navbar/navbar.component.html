@@ -1,6 +1,6 @@
 <nav id="navbar" [class.scrolled]="scrolled">
 
-    <div class="nav-inner container">
+    <div class="nav-inner">
 
         <a href="#hero" class="nav-logo">
             <span class="logo-name">Talisman</span>
@@ -8,11 +8,19 @@
         </a>
 
         <ul class="nav-links">
-            <li><a href="#herkunft">Herkunft</a></li>
-            <li><a href="#verarbeitung">Verarbeitung</a></li>
-            <li><a href="#produkte">Produkte</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#herkunft">{{ 'nav.origin' | translate }}</a></li>
+            <li><a href="#verarbeitung">{{ 'nav.process' | translate }}</a></li>
+            <li><a href="#produkte">{{ 'nav.products' | translate }}</a></li>
+            <li><a href="#kontakt">{{ 'nav.contact' | translate }}</a></li>
         </ul>
+
+        <div class="lang-switcher">
+            <button (click)="changeLanguage('de')">DE</button>
+            <span>/</span>
+            <button (click)="changeLanguage('en')">EN</button>
+            <span>/</span>
+            <button (click)="changeLanguage('es')">ES</button>
+        </div>
 
         <button class="nav-toggle" (click)="toggleMenu()" aria-label="Menü öffnen">
             <span></span><span></span><span></span>
@@ -21,10 +29,17 @@
     </div>
 
     <ul class="mobile-menu" [class.open]="menuOpen">
-        <li><a href="#herkunft" (click)="closeMenu()">Herkunft</a></li>
-        <li><a href="#verarbeitung" (click)="closeMenu()">Verarbeitung</a></li>
-        <li><a href="#produkte" (click)="closeMenu()">Produkte</a></li>
-        <li><a href="#kontakt" (click)="closeMenu()">Kontakt</a></li>
+        <li><a href="#herkunft" (click)="closeMenu()">{{ 'nav.origin' | translate }}</a></li>
+        <li><a href="#verarbeitung" (click)="closeMenu()">{{ 'nav.process' | translate }}</a></li>
+        <li><a href="#produkte" (click)="closeMenu()">{{ 'nav.products' | translate }}</a></li>
+        <li><a href="#kontakt" (click)="closeMenu()">{{ 'nav.contact' | translate }}</a></li>
+        <li class="mobile-lang">
+            <button (click)="changeLanguage('de')">DE</button>
+            <span>/</span>
+            <button (click)="changeLanguage('en')">EN</button>
+            <span>/</span>
+            <button (click)="changeLanguage('es')">ES</button>
+        </li>
     </ul>
 
 </nav>

@@ -1,7 +1,9 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-produkte',
+  imports: [TranslatePipe],
   templateUrl: './produkte.component.html',
   styleUrls: ['./produkte.component.scss']
 })

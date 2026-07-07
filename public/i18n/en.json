@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "origin": "Origin",
+    "process": "Process",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "hero": {
+    "sub": "Esmeraldas · Ecuador",
+    "scroll": "Discover"
+  },
+  "origin": {
+    "eyebrow": "Origin",
+    "title": "From the Heart of Ecuador",
+    "p1": "Our cacao plantation is located in the Esmeraldas region of northwestern Ecuador – one of the most biodiverse tropical regions in the world. The humid climate, fertile volcanic soils, and proximity to the equator create ideal conditions for Cacao Fino de Aroma.",
+    "p2": "For more than 50 years, our family has cultivated this cacao with care and respect for nature. Grown on hilly terrain at a small to medium scale – pesticide-free, in harmony with the surrounding rainforest.",
+    "p3": "What grows here is no mass product. It is a cacao with history, character, and an aroma that speaks of the soil from which it comes.",
+    "fact1": "Years of family tradition",
+    "fact2": "Esmeraldas, Ecuador",
+    "fact3": "Sustainable farming"
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "From Tree to Bean",
+    "step1title": "Harvest & Opening",
+    "step1text": "Ripe cacao pods are harvested by hand and opened. The cacao beans are carefully removed.",
+    "step2title": "Fermentation",
+    "step2text": "The beans ferment for several days in wooden boxes. This process develops the typical, complex aroma of fine cacao.",
+    "step3title": "Drying",
+    "step3text": "The beans are then sun-dried – slowly and gently, to preserve the aroma.",
+    "step4title": "Roasting",
+    "step4text": "The dried beans are roasted and shelled. Roasting brings out the depth of flavour.",
+    "step5title": "Grinding",
+    "step5text": "Grinding produces the liquid cacao mass. Pressing separates the cacao butter – the residue becomes the finest cacao powder."
+  },
+  "products": {
+    "eyebrow": "Products",
+    "title": "What we offer",
+    "sub": "All products come exclusively from our own plantation in Esmeraldas. No additives, no compromises.",
+    "p1tag": "High cacao content",
+    "p1name": "Dark Chocolate",
+    "p1desc": "Cacao mass, a little cacao butter, and a small amount of sugar – finely conched and tempered. The result is a chocolate with exceptional aroma.",
+    "p2tag": "100 % pure cacao",
+    "p2name": "Cacao Paste",
+    "p2desc": "Grinding roasted cacao beans produces a creamy, aromatic paste of 100 % cacao – without any additives.",
+    "p3tag": "Fermented & dried",
+    "p3name": "Cacao Beans",
+    "p3desc": "Fermented and sun-dried raw beans of premium quality. Sorted, cleaned, ready to eat."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Business Enquiries",
+    "sub": "Interested in our products? We look forward to hearing from you.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "success": "Your message has been sent successfully."
+  },
+  "footer": {
+    "tagline": "Cacao Fino de Aroma from Esmeraldas, Ecuador.",
+    "rights": "All rights reserved."
+  }
+}

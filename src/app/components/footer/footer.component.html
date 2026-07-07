@@ -5,22 +5,20 @@
         <div class="footer-brand">
             <span class="footer-name">Talisman</span>
             <span class="footer-sub">Cacao Fino de Aroma</span>
-            <p class="footer-tagline">
-                Cacao Fino de Aroma aus Esmeraldas, Ecuador.
-            </p>
+            <p class="footer-tagline">{{ 'footer.tagline' | translate }}</p>
         </div>
 
         <nav class="footer-nav">
-            <a href="#herkunft">Herkunft</a>
-            <a href="#verarbeitung">Verarbeitung</a>
-            <a href="#produkte">Produkte</a>
-            <a href="#kontakt">Kontakt</a>
+            <a href="#herkunft">{{ 'nav.origin' | translate }}</a>
+            <a href="#verarbeitung">{{ 'nav.process' | translate }}</a>
+            <a href="#produkte">{{ 'nav.products' | translate }}</a>
+            <a href="#kontakt">{{ 'nav.contact' | translate }}</a>
         </nav>
 
     </div>
 
     <div class="footer-bottom">
-        <span>© {{ year }} Talisman Cacao. Alle Rechte vorbehalten.</span>
+        <span>© {{ year }} Talisman Cacao. {{ 'footer.rights' | translate }}</span>
     </div>
 
 </footer>

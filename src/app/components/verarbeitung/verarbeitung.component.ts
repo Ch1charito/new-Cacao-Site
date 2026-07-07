@@ -1,7 +1,9 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-verarbeitung',
+  imports: [TranslatePipe],
   templateUrl: './verarbeitung.component.html',
   styleUrls: ['./verarbeitung.component.scss']
 })

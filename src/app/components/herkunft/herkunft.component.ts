@@ -1,7 +1,9 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-herkunft',
+  imports: [TranslatePipe],
   templateUrl: './herkunft.component.html',
   styleUrls: ['./herkunft.component.scss']
 })
