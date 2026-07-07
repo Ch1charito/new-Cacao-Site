@@ -98,3 +98,38 @@ textarea {
     opacity: 1;
     transform: translateY(0);
 }
+
+.submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--cream);
+    color: var(--brown-deep);
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--gold);
+    box-shadow: 0 4px 24px rgba(44, 26, 14, 0.15);
+    animation: slideIn 0.3s ease;
+    z-index: 999;
+    white-space: nowrap;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(1rem); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border-color: #c0392b;
+    background: rgb(212 85 85 / 16%);
+    box-shadow: 0 0 0 3px rgba(224, 30, 8, 0.1);
+    border-radius: 4px;
+}

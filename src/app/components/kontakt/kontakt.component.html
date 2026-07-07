@@ -21,6 +21,8 @@
                     name="name"
                     [(ngModel)]="contactData.name"
                     placeholder="Ihr vollständiger Name"
+                    minlength="2"
+                    maxlength="40"
                     required />
             </div>
 
@@ -32,6 +34,7 @@
                     name="email"
                     [(ngModel)]="contactData.email"
                     placeholder="ihre@email.com"
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
                     required />
             </div>
 
@@ -43,6 +46,7 @@
                     [(ngModel)]="contactData.message"
                     rows="5"
                     placeholder="Beschreiben Sie kurz Ihr Interesse oder Ihren Bedarf ..."
+                    minlength="10"
                     required></textarea>
             </div>
 
@@ -51,7 +55,7 @@
             </button>
 
             @if (sendSuccess) {
-                <p class="success-msg">Ihre Nachricht wurde erfolgreich gesendet.</p>
+                <div class="toast">Nachricht erfolgreich gesendet.</div>
             }
 
         </form>
