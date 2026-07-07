@@ -11,26 +11,48 @@
             </p>
         </div>
 
-        <form class="kontakt-form reveal">
+        <form class="kontakt-form reveal" (ngSubmit)="onSubmit(kontaktForm)" #kontaktForm="ngForm">
 
             <div class="form-group">
-                <label>Name *</label>
-                <input type="text" placeholder="Ihr vollständiger Name" />
+                <label for="name">Name <span class="req">*</span></label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    [(ngModel)]="contactData.name"
+                    placeholder="Ihr vollständiger Name"
+                    required />
             </div>
 
             <div class="form-group">
-                <label>E-Mail *</label>
-                <input type="email" placeholder="ihre@email.com" />
+                <label for="email">E-Mail <span class="req">*</span></label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    [(ngModel)]="contactData.email"
+                    placeholder="ihre@email.com"
+                    required />
             </div>
 
             <div class="form-group">
-                <label>Nachricht *</label>
-                <textarea rows="5" placeholder="Beschreiben Sie kurz Ihr Interesse oder Ihren Bedarf ..."></textarea>
+                <label for="message">Nachricht <span class="req">*</span></label>
+                <textarea
+                    id="message"
+                    name="message"
+                    [(ngModel)]="contactData.message"
+                    rows="5"
+                    placeholder="Beschreiben Sie kurz Ihr Interesse oder Ihren Bedarf ..."
+                    required></textarea>
             </div>
 
-            <button type="button" class="submit-btn">
+            <button type="submit" class="submit-btn" [disabled]="!kontaktForm.form.valid">
                 Nachricht senden <span class="btn-arrow">→</span>
             </button>
+
+            @if (sendSuccess) {
+                <p class="success-msg">Ihre Nachricht wurde erfolgreich gesendet.</p>
+            }
 
         </form>
 
