@@ -19,6 +19,11 @@
 
     <div class="footer-bottom">
         <span>© {{ year }} Talisman Cacao. {{ 'footer.rights' | translate }}</span>
+        <div class="footer-legal">
+            <a [routerLink]="['/impressum']">Impressum</a>
+            <span>·</span>
+            <a [routerLink]="['/datenschutz']">Datenschutz</a>
+        </div>
     </div>
 
 </footer>
