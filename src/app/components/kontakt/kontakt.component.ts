@@ -19,10 +19,10 @@ export class KontaktComponent {
     message: '',
   };
 
-  mailTest = true;      // change to false when on webserver true only for local testing
+  mailTest = false;      // change to false when on webserver true only for local testing
 
   post = {
-    endPoint: 'https://DEINE-DOMAIN.de/sendMail.php', // change domain later!!!
+    endPoint: 'https://talisman-cacao.r-bautista-buschmann.de/sendMail.php', // 
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
