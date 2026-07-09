@@ -60,5 +60,8 @@
   "footer": {
     "tagline": "Cacao Fino de Aroma de Esmeraldas, Ecuador.",
     "rights": "Todos los derechos reservados."
+  },
+  "legal": {
+    "back": "← Volver"
   }
 }
